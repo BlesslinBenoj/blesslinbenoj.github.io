@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Blesslin benoj</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!---------------PAGE loader start---------->
+
+<div class="page-loader">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+
+<!---------------PAGE loader end---------->
+
+
+<!-- -----     background circles start------------>
+<div class="bg-circles">
+  <div class="circle-1"></div>
+  <div class="circle-2"></div>
+  <div class="circle-3"></div>
+  <div class="circle-4"></div>
+</div>
+<!-- -----     background circles end------------>
+
+
+
+
+
+<!-----------overlay start------------->
+<div class="overlay">
+
+</div>
+<!-----------overlay end------------->
+
+
+
+
+
+  <!--main start -->
+<div class="main hidden">
+  <!-- header start-->
+  <header class="header">
+    <div class="container">
+      <div class="row flex-end">
+        <button type="button" class="nav-toggler">
+          <span></span>
+        </button>
+        <nav class="nav">
+          <div class="nav-inner">
+            <ul>
+              <li><a href="#home" class="nav-item link-item">home</a></li>
+              <li><a href="#about" class="nav-item link-item">about</a></li>
+              <li><a href="#portfolio" class="nav-item link-item">portfolio</a></li>
+              <li><a href="#contact" class="nav-item link-item">contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- header end-->
+
+
+
+  <!--home section start-->
+    <section class="home-section align-items-center" id="home">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="home-text">
+            <p>Hello world, I'm</p>
+            <div id="box">
+              <h1 class="alpha">B</h1>
+              <h1 class="alpha">l</h1>
+              <h1 class="alpha">e</h1>
+              <h1 class="alpha">s</h1>
+              <h1 class="alpha">s</h1>
+              <h1 class="alpha">l</h1> 
+              <h1 class="alpha">i</h1> 
+              <h1 class="alpha">n</h1> 
+              <span id="me">
+              <h1 class="alpha">B</h1>
+              <h1 class="alpha">e</h1>
+              <h1 class="alpha">n</h1> 
+              <h1 class="alpha">o</h1> 
+              <h1 class="alpha">j</h1> 
+             
+      
+              </span>
+            </div>
+       
+      
+          <!--Javascript for animation -->
+          <script>
+      
+              const elements = document.getElementsByClassName('alpha');
+      
+              for (let i = 0; i<=elements.length; i++)
+              {
+                  elements[i].addEventListener('animationend',function(e){
+                      elements[i].classList.remove('animated');
+      
+                  });
+      
+                  elements[i].addEventListener('mouseover',function(e){
+                      elements[i].classList.add('animated')
+                  })
+              } 
+          </script>
+      
+            
+            <h2>Self taught web developer</h2> 
+            <a href="#about" class="btn link-item">more about me</a>
+            <a href="#portfolio" class="btn link-item">portfolio</a>
+          </div>
+          <div class="home-img">
+            <div class="img-box">
+              <img src="img/me.png" alt="profile-img">
+            </div>
+          </div> 
+        </div>
+      </div>
+    </section>
+    <!--home section end-->
+
+
+    <!--about section start-->
+    <section class="about-section sec-padding" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2>about me</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="about-img">
+            <div class="img-box">
+              <img src="img/about-me.jpeg" alt="about img">
+              
+            </div>
+          </div>
+          <div class="about-text">
+            <p>I am motivated, enthusiastic and well organised, with a keen eye for beautiful design, primarily based around user interfaces. The main areas of my expertise are HTML(5), CSS(3) and JavaScript, but I have intermediate knowledge of Python,PHP and MySQL.</p>
+            <h3>skills</h3>
+            <div class="skills">
+              <div class="skill-item">html</div>
+              <div class="skill-item">css</div>
+              <div class="skill-item">bootstrap</div>
+              <div class="skill-item">javascript</div>
+              <div class="skill-item">php</div>
+              <div class="skill-item">python</div>
+              <div class="skill-item">wordpress</div>
+              
+            </div>
+
+            <div class="about-tabs">
+              <button type="button" class="tab-item active" data-target="#education">education</button>
+              <button type="button" class="tab-item" data-target="#experience">experience</button>
+            </div>
+
+            <!--education start-->
+            <div class="tab-content active" id="education">
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="date">2017-2019</span>
+                  <h4>Higher Education - <span>SJMHSS</span></h4>
+                  <p>Higher education is third level education after you leave school. It takes places at universities and Further Education colleges and normally includes undergraduate and postgraduate study. </p>  
+                </div>
+                <div class="timeline-item">
+                  <span class="date">2019-present</span>
+                  <h4>bachelor of technology - <span>PJCE</span></h4>
+                  <p>Bachelor of Technology (BTech) is a professional undergraduate engineering degree programme awarded to candidates after the completion of four years of study in the field. </p>  
+                </div>
+                <div class="timeline-item">
+                  <span class="date">2020-present</span>
+                  <h4>Web Development - <span>Online</span></h4>
+                  <p>Web development is the building and maintenance of websites; it's the work that happens behind the scenes to make a website look great, work fast and perform well with a seamless user experience.</p>  
+                </div>
+              </div>
+            </div>
+            <!--education end-->
+            <!--experience start-->
+            <div class="tab-content" id="experience">
+              <div class="timeline">
+                <div class="timeline-item">
+                  <span class="date">2018 - 2019</span>
+                  <h4>Frontend Web Developer - <span>logictenacity</span></h4>
+                  <p>Front end developers are computer programmers who specialize in website design. Front end developer duties include determining the structure and design of web pages</p>
+                </div>
+                <div class="timeline-item">
+                  <span class="date">2019 - 2020</span>
+                  <h4>Wordpress - <span>logictenacity</span></h4>
+                  <p>WordPress is a free and open-source content management system written in PHP and paired with a MySQL or MariaDB database. Features include a plugin architecture and a template system, referred to within WordPress as Themes.</p>
+                </div>
+                <div class="timeline-item">
+                  <span class="date">2020 - present</span>
+                  <h4>Web Developer - <span>X3Trinity</span></h4>
+                  <p>Web developers design and build websites. They are typically responsible for the appearance, of the site and technical aspects, such as site speed and how much traffic the site can handle. Web developers may also create site content that requires technical features.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!--experience end-->
+
+            <a href="Resume.pdf" target="_blank" class="btn">download cv</a>
+            <a href="#contact" class="btn link-item">contact me</a>
+
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--about section end-->
+    <!--portfolio section start-->
+    <section class="portfolio-section sec-padding" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2>recent work</h2>
+          </div>
+        </div>
+        <div class="row">
+          <!--portfolio item start-->
+          <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img src="img/portfolio/1.png" alt="portfolio item thumb">
+            </div>
+            <h3 class="portfolio-item-title">Personal website</h3>
+            <button type="button" class="btn view-project-btn">view project</button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>These sites get the job done in a way that is beautiful and effective, but totally attainable, even for those of us without design chops.</p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>created - <span>17 jan 2021</span></li>
+                  <li>technologies used - <span>html, Css</span></li>
+                  <li>role - <span>frontend</span></li>
+                  <li>view online - <span><a href="#" target="_blank">www.domain.com</a></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--portfolio item end-->
+           <!--portfolio item start-->
+           <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img src="img/portfolio/2.png" alt="portfolio item thumb">
+            </div>
+            <h3 class="portfolio-item-title">Construction company website</h3>
+            <button type="button" class="btn view-project-btn">view project</button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>Modern and sleek, Costain’s website is easily accessible for the user but if still packed full of relevant information and content.</p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>created - <span>10 june 2021</span></li>
+                  <li>technologies used - <span>HTML5,CSS3,bootstrap5,Javascript</span></li>
+                  <li>role - <span>frontend</span></li>
+                  <li>view online - <span><a href="#" target="_blank">www.domain.com</a></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--portfolio item end-->
+           <!--portfolio item start-->
+           <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img src="img/portfolio/3.png" alt="portfolio item thumb">
+            </div>
+            <h3 class="portfolio-item-title">Hotel website</h3>
+            <button type="button" class="btn view-project-btn">view project</button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>If you are looking for peace and tranquillity after days spent walking amongst the city streets or under the sun, the Hotel of Nice offers refreshments in its refined indoor rooms. </p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>created - <span>12 dec 2020</span></li>
+                  <li>technologies used - <span>html, Css ,bootstrap 4</span></li>
+                  <li>role - <span>frontend</span></li>
+                  <li>view online - <span><a href="#" target="_blank">www.domain.com</a></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--portfolio item end-->
+           <!--portfolio item start-->
+           <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img src="img/portfolio/4.jpg" alt="portfolio item thumb">
+            </div>
+            <h3 class="portfolio-item-title">restaurent website</h3>
+            <button type="button" class="btn view-project-btn">view project</button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>Building a great online presence is essential to the success of your restaurant. Well-designed restaurant websites are the cornerstone of this online presence and can serve to both attract new customers and build loyalty in existing customers.</p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>created - <span>23 feb 2021</span></li>
+                  <li>technologies used - <span>html, Css, javascript</span></li>
+                  <li>role - <span>frontend</span></li>
+                  <li>view online - <span><a href="#" target="_blank">www.domain.com</a></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--portfolio item end-->
+           <!--portfolio item start-->
+           <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img src="img/portfolio/5.png" alt="portfolio item thumb">
+            </div>
+            <h3 class="portfolio-item-title">Store Main menu Page</h3>
+            <button type="button" class="btn view-project-btn">view project</button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>A typical online store enables the customer to browse the firm's range of products and services, view photos or images of the products, along with information about the product specifications, features and prices.</p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>created - <span>5 mar 2021</span></li>
+                  <li>technologies used - <span>html, Css,bootstrap</span></li>
+                  <li>role - <span>frontend</span></li>
+                  <li>view online - <span><a href="#" target="_blank">www.domain.com</a></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--portfolio item end-->
+           <!--portfolio item start-->
+           <div class="portfolio-item">
+            <div class="portfolio-item-thumbnail">
+              <img src="img/portfolio/6.png" alt="portfolio item thumb">
+            </div>
+            <h3 class="portfolio-item-title">product landing page</h3>
+            <button type="button" class="btn view-project-btn">view project</button>
+            <div class="portfolio-item-details">
+              <div class="description">
+                <p>A product landing page is a post-click page created specifically to convince a visitor to convert on a product-related offer. Design-wise, it's similar a traditional landing page.</p>
+              </div>
+              <div class="general-info">
+                <ul>
+                  <li>created - <span>21 apr 2021</span></li>
+                  <li>technologies used - <span>html5, Css3,Javascript</span></li>
+                  <li>role - <span>frontend</span></li>
+                  <li>view online - <span><a href="#" target="_blank">www.domain.com</a></span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--portfolio item end-->
+        </div>
+      </div>
+    </section>
+
+
+
+    <!--portfolio section end-->
+
+
+    <!--contact section start-->
+    <section class="contact-section sec-padding" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="section-title">
+            <h2>contact me</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="contact-form">
+            <form id="contact-form" method="post" action="form.php">
+              <div class="row">
+                <div class="input-group">
+                  <input type="text" placeholder="Name" class="input-control" required>
+                </div>
+                <div class="input-group">
+                  <input type="text" placeholder="Email" class="input-control" required>
+                </div>
+                <div class="input-group">
+                  <input type="text" placeholder="Subject" class="input-control" required>
+                </div>
+                <div class="input-group">
+                  <textarea placeholder="Message" class="input-control" required></textarea>
+                </div>
+                <div class="submit-btn">
+                  <button type="submit" class="btn">send message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+            <div class="contact-info">
+              <div class="contact-info-item">
+                <h3>Email</h3>
+                <p>blesslinbenoj2001@gmail.com</p>
+              </div>
+              <div class="contact-info-item">
+                <h3>phone</h3>
+                <p>+91 8903871127</p>
+              </div>
+              <div class="contact-info-item">
+                <h3>Social Profiles</h3>
+                <div class="social-links">
+                  
+                  <a href="https://t.me/logictenacity" target="_blank"><i class="fab fa-telegram"></i></a>
+                  <a href="https://www.instagram.com/logic_tenacity/" target="_blank"><i class="fab fa-instagram"></i></a>
+                  
+                  <a href="https://www.linkedin.com/in/logic-tenacity-236643214" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  <a href="https://github.com/logictenacity" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+              </div>
+            </div> 
+        </div>
+      </div>
+    </section>
+    
+    <!--contact section end-->
+
+
+ 
+</div>
+<!--main end-->
+
+<!--portfolio item details popup start-->
+<div class="portfolio-popup">
+  <div class="pp-inner">
+    <div class="pp-content">
+      <div class="pp-header">
+        <button type="button" class="btn pp-close"><i class="fas fa-times"></i></button>
+        <div class="pp-thumbnail">
+          <img src="img/portfolio/3.jpg" alt="pp-thumbnail">
+        </div>
+        <h3></h3>
+      </div>
+      <div class="pp-body">
+      </div>
+    </div>
+  </div>
+
+
+</div>
+<!--portfolio item details popup end-->
+
+
+  
+<script src="js/script.js"></script>
+</body>
+</html>
